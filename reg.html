@@ -1,0 +1,39 @@
+<html> 
+<head>
+<link href="cssforlastlab.css" rel="stylesheet" type="text/css"><body style="background-image: url('bg-9.png')">
+<meta charset="utf-8">
+<title>Регистрация</title>
+</head>
+
+<body style="background-image: url('bg-9.png')">
+
+<div id="CenterBlock_reg">                                                                                   <!--блок для отображения формы посредине экрана --> 
+
+		<p style="text-align: center;font-size:35px "><strong>Регистрация&nbsp;</strong></p>
+		<p style="text-align: center;font-size:20px "><strong>Введите данные для регистрации:</strong></p>
+
+		<form action="reg.php" method = "post">                                                              
+		    <p style="text-align: center;font-size:20px "><strong>Логин:&nbsp;&nbsp;</strong> 
+			<input required maxlength="25" size="40" name="login" ></p>
+			
+		   <p style="text-align: center;font-size:20px "><strong>Пароль:</strong> 
+			<input required type="password" maxlength="10" size="40" name="password"></p>
+			
+			<p style="text-align: center;font-size:20px "><strong>Повторите пароль:</strong>
+			<input required type="password" maxlength="10" size="30" name="password1"></p>
+			
+			<p style="text-align: center;font-size:20px "><strong>Права администратора:</strong> 
+			<input type="radio" name="admin" value="1"> Да <input type="radio" name="admin" value="0"> Нет <br/> 
+			
+			<p style="text-align: center;"><input type="submit" class ="default_button" value="Отправить"></p>
+		 </form>
+		 
+		<form action="main.html" method="POST">
+			<p style="text-align: center;"><input type="submit" value="Вернуться" class = "default_button"></p>
+		</form>';
+ 
+</div>
+
+</body>
+
+</html>
